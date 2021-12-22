@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AlertPage } from './demos/alert/alert.page';
+import { AlertAdditionalPage } from './demos/alertAdditional/alertAdditional.page';
 
 const routes: Routes = [
   {
@@ -11,6 +12,10 @@ const routes: Routes = [
   {
     path:'alert',
     component:AlertPage
+  },
+  {
+    path:'alertAdditional',
+    component:AlertAdditionalPage
   }
 ];
 
