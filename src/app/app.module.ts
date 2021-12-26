@@ -9,10 +9,18 @@ import { AlertAppearancePage } from './demos/alert/alert-appearance/alert-appear
 import { AlertButtonsPage } from './demos/alert/alert-buttons/alert-buttons.page';
 import { AlertMethodsPage } from './demos/alert/alert-methods/alert-methods.page';
 import { AlertRightlinkPage } from './demos/alert/alert-rightlink/alert-rightlink.page';
+import { BadgeColorsPage } from './demos/badge/badge-colors/badge.colors.page';
+import { BadgeCustomePage } from './demos/badge/badge-custom/badge-custom.page';
+import { BadgeImportPage } from './demos/badge/badge-import/badge-import.page';
+import { BadgePrefixPage } from './demos/badge/badge-prefix/badge-prefix.page';
+import { BadgeSuffixPage } from './demos/badge/badge-suffix/badge-suffix.page';
+
+
+
 
 import * as en from '../assets/locale/en.json';
 import * as fa from '../assets/locale/fa.json';
-import { AXAlertModule } from '@acorex/components';
+import { AXAlertModule, AXBadgeModule, AXEditorDecoratorModule, AXIconModule } from '@acorex/components';
 
 export function initApp() {
   return () => {
@@ -25,8 +33,8 @@ export function initApp() {
 }
 
 
-const MODULES: any = [AXCoreModule,AXAlertModule];
-const PAGES: any = [AlertAdditionalPage,AlertAppearancePage,AlertButtonsPage,AlertMethodsPage,AlertRightlinkPage];
+const MODULES: any = [AXCoreModule, AXAlertModule,AXBadgeModule,AXIconModule,AXEditorDecoratorModule];
+const PAGES: any = [AlertAdditionalPage, AlertAppearancePage, AlertButtonsPage, AlertMethodsPage, AlertRightlinkPage, BadgeColorsPage, BadgeCustomePage, BadgeImportPage, BadgePrefixPage, BadgeSuffixPage]
 const SERVICES: any = [AXHotkeysService]
 
 @NgModule({
