@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-alert-additional',
-  templateUrl: './alertAdditional.page.html',
+  templateUrl: './alert-additional.page.html',
 })
 export class AlertAdditionalPage implements OnInit {
 

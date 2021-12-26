@@ -4,7 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { AlertAdditionalPage } from './demos/alert/alert-Additional/alertAdditional.page';
+import { AlertAdditionalPage } from './demos/alert/alert-additional/alert-additional.page';
 
 import * as en from '../assets/locale/en.json';
 import * as fa from '../assets/locale/fa.json';
