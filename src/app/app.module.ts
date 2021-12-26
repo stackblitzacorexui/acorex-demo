@@ -33,7 +33,7 @@ export function initApp() {
 }
 
 
-const MODULES: any = [AXCoreModule, AXAlertModule,AXBadgeModule,AXIconModule,AXEditorDecoratorModule];
+const MODULES: any = [AXCoreModule, AXAlertModule,AXBadgeModule,AXIconModule,AXEditorDecoratorModule,AXIconModule];
 const PAGES: any = [AlertAdditionalPage, AlertAppearancePage, AlertButtonsPage, AlertMethodsPage, AlertRightlinkPage, BadgeColorsPage, BadgeCustomePage, BadgeImportPage, BadgePrefixPage, BadgeSuffixPage]
 const SERVICES: any = [AXHotkeysService]
 
