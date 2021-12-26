@@ -12,7 +12,8 @@ import { AlertRightlinkPage } from './demos/alert/alert-rightlink/alert-rightlin
 
 import * as en from '../assets/locale/en.json';
 import * as fa from '../assets/locale/fa.json';
-import { AXAlertModule } from '@acorex/components';
+import { AXAlertModule, AXBadgeModule, AXButtonModule, AXEditorDecoratorModule, AXIconModule } from '@acorex/components';
+
 
 export function initApp() {
   return () => {
@@ -25,7 +26,7 @@ export function initApp() {
 }
 
 
-const MODULES: any = [AXCoreModule,AXAlertModule];
+const MODULES: any = [AXCoreModule,AXAlertModule,AXCoreModule,AXAlertModule,AXBadgeModule,AXIconModule,AXEditorDecoratorModule,AXButtonModule];
 const PAGES: any = [AlertAdditionalPage,AlertAppearancePage,AlertButtonsPage,AlertMethodsPage,AlertRightlinkPage];
 const SERVICES: any = [AXHotkeysService]
 
