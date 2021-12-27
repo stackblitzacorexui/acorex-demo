@@ -1,1 +1,110 @@
-<h1>button decoration</h1>
+<div class="ax-grid ax-grid-cols-7 ax-gap-4">
+  <ax-button text="Button" color="primary">
+    <ax-prefix>
+      <ax-content>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="ax-h-5 ax-w-5"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+          />
+        </svg>
+      </ax-content>
+    </ax-prefix>
+  </ax-button>
+  <ax-button text="Button" color="secondary">
+    <ax-suffix>
+      <ax-content>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="ax-h-5 ax-w-5"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+          />
+        </svg>
+      </ax-content>
+    </ax-suffix>
+  </ax-button>
+  <ax-button text="Button" color="info">
+    <ax-prefix>
+      <ax-content>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="ax-h-5 ax-w-5"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+          />
+        </svg>
+      </ax-content>
+    </ax-prefix>
+    <ax-suffix>
+      <ax-content>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="ax-h-5 ax-w-5"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+          />
+        </svg>
+      </ax-content>
+    </ax-suffix>
+  </ax-button>
+  <div class="ax-flex ax-items-center ax-justify-center">
+    <ax-button look="twotone" color="primary">
+      <ax-prefix>
+        <ax-content>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="ax-h-5 ax-w-5"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+            />
+          </svg>
+        </ax-content>
+      </ax-prefix>
+    </ax-button>
+  </div>
+  <ax-button color="primary" text="Processing..." look="outline">
+    <ax-loading></ax-loading>
+  </ax-button>
+  <ax-button color="primary" text="Messages">
+    <ax-suffix>
+      <ax-badge text="12" color="light"></ax-badge>
+    </ax-suffix>
+  </ax-button>
+</div>

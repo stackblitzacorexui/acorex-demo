@@ -27,7 +27,9 @@ import {
   AXButtonModule,
   AXEditorDecoratorModule,
   AXIconModule,
+  AXLoadingModule,
 } from '@acorex/components';
+import { ButtonToggleablePage } from './demos/button/button-toggleable/button-toggleable.page';
 
 export function initApp() {
   return () => {
@@ -47,6 +49,7 @@ const MODULES: any = [
   AXEditorDecoratorModule,
   AXIconModule,
   AXButtonModule,
+  AXLoadingModule,
 ];
 const PAGES: any = [
   AlertAdditionalPage,
@@ -63,6 +66,7 @@ const PAGES: any = [
   ButtonDecorationPage,
   ButtonDisabledPage,
   ButtonSizesPage,
+  ButtonToggleablePage,
 ];
 const SERVICES: any = [AXHotkeysService];
 

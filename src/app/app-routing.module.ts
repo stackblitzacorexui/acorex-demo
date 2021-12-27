@@ -14,6 +14,7 @@ import { ButtonAppearancesPage } from './demos/button/button-appearances/button-
 import { ButtonDecorationPage } from './demos/button/button-decoration/button-decoration.page';
 import { ButtonDisabledPage } from './demos/button/button-disabled/button-disabled.page';
 import { ButtonSizesPage } from './demos/button/button-sizes/button-sizes.page';
+import { ButtonToggleablePage } from './demos/button/button-toggleable/button-toggleable.page';
 
 const routes: Routes = [
   {
@@ -77,6 +78,10 @@ const routes: Routes = [
   {
     path: 'button/button-sizes',
     component: ButtonSizesPage,
+  },
+  {
+    path: 'button/button-toggleable',
+    component: ButtonToggleablePage,
   },
 ];
 
