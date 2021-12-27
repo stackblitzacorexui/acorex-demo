@@ -11,6 +11,9 @@ import { BadgePrefixPage } from './demos/badge/badge-prefix/badge-prefix.page';
 import { BadgeImportPage } from './demos/badge/badge-import/badge-import.page';
 import { BadgeSuffixPage } from './demos/badge/badge-suffix/badge-suffix.page';
 import { BadgeSizePage } from './demos/badge/badge-size/badge-size.page';
+import { ButtonGroupSingle } from './demos/button-group/button-group-single/button-group-single.page';
+import { ButtonGroupBasic } from './demos/button-group/button-group-basic/button-group-basic.page';
+import { ButtonGroupMulti } from './demos/button-group/button-group-multi/button-group-multi.page';
 
 const routes: Routes = [
   {
@@ -62,6 +65,18 @@ const routes: Routes = [
   {
     path: 'badge/badge-size',
     component: BadgeSizePage,
+  },
+  {
+    path: 'button-group/button-group-single',
+    component: ButtonGroupSingle,
+  },
+  {
+    path: 'button-group/button-group-basic',
+    component: ButtonGroupBasic,
+  },
+  {
+    path: 'button-group/button-group-multi',
+    component: ButtonGroupMulti,
   },
 ];
 

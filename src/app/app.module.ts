@@ -24,6 +24,9 @@ import {
   AXIconModule,
 } from '@acorex/components';
 import { BadgeSizePage } from './demos/badge/badge-size/badge-size.page';
+import { ButtonGroupBasic } from './demos/button-group/button-group-basic/button-group-basic.page';
+import { ButtonGroupMulti } from './demos/button-group/button-group-multi/button-group-multi.page';
+import { ButtonGroupSingle } from './demos/button-group/button-group-single/button-group-single.page';
 
 export function initApp() {
   return () => {
@@ -55,6 +58,9 @@ const PAGES: any = [
   BadgePrefixPage,
   BadgeSuffixPage,
   BadgeSizePage,
+  ButtonGroupBasic,
+  ButtonGroupMulti,
+  ButtonGroupSingle,
 ];
 const SERVICES: any = [AXHotkeysService];
 
