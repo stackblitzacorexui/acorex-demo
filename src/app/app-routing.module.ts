@@ -10,62 +10,78 @@ import { BadgeCustomePage } from './demos/badge/badge-custom/badge-custom.page';
 import { BadgePrefixPage } from './demos/badge/badge-prefix/badge-prefix.page';
 import { BadgeImportPage } from './demos/badge/badge-import/badge-import.page';
 import { BadgeSuffixPage } from './demos/badge/badge-suffix/badge-suffix.page';
-
-
-
-
+import { ButtonAppearancesPage } from './demos/button/button-appearances/button-appearances.page';
+import { ButtonDecorationPage } from './demos/button/button-decoration/button-decoration.page';
+import { ButtonDisabledPage } from './demos/button/button-disabled/button-disabled.page';
+import { ButtonSizesPage } from './demos/button/button-sizes/button-sizes.page';
 
 const routes: Routes = [
   {
-    path:'',
-    pathMatch:'full',
-    redirectTo:'alert/alert-additional'
+    path: '',
+    pathMatch: 'full',
+    redirectTo: 'alert/alert-additional',
   },
 
   {
-    path:'alert/alert-additional',
-    component:AlertAdditionalPage
+    path: 'alert/alert-additional',
+    component: AlertAdditionalPage,
   },
   {
-    path:'alert/alert-appearance',
-    component:AlertAppearancePage
+    path: 'alert/alert-appearance',
+    component: AlertAppearancePage,
   },
   {
-    path:'alert/alert-buttons',
-    component:AlertButtonsPage
+    path: 'alert/alert-buttons',
+    component: AlertButtonsPage,
   },
   {
-    path:'alert/alert-methods',
-    component:AlertMethodsPage
+    path: 'alert/alert-methods',
+    component: AlertMethodsPage,
   },
   {
-    path:'alert/alert-rightlink',
-    component:AlertRightlinkPage
+    path: 'alert/alert-rightlink',
+    component: AlertRightlinkPage,
   },
   {
-    path:'badge/badge-colors',
-    component:BadgeColorsPage
+    path: 'badge/badge-colors',
+    component: BadgeColorsPage,
   },
   {
-    path:'badge/badge-custom',
-    component: BadgeCustomePage
+    path: 'badge/badge-custom',
+    component: BadgeCustomePage,
   },
   {
-    path:'badge/badge-prefix',
-    component:BadgePrefixPage
+    path: 'badge/badge-prefix',
+    component: BadgePrefixPage,
   },
   {
-    path:'badge/badge-import',
-    component:BadgeImportPage
+    path: 'badge/badge-import',
+    component: BadgeImportPage,
   },
   {
-    path:'badge/badge-suffix',
-    component:BadgeSuffixPage
-  }
+    path: 'badge/badge-suffix',
+    component: BadgeSuffixPage,
+  },
+  {
+    path: 'button/button-appearances',
+    component: ButtonAppearancesPage,
+  },
+  {
+    path: 'button/button-decoration',
+    component: ButtonDecorationPage,
+  },
+  {
+    path: 'button/button-disabled',
+    component: ButtonDisabledPage,
+  },
+  {
+    path: 'button/button-sizes',
+    component: ButtonSizesPage,
+  },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

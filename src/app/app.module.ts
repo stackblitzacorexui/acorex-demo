@@ -14,13 +14,19 @@ import { BadgeCustomePage } from './demos/badge/badge-custom/badge-custom.page';
 import { BadgeImportPage } from './demos/badge/badge-import/badge-import.page';
 import { BadgePrefixPage } from './demos/badge/badge-prefix/badge-prefix.page';
 import { BadgeSuffixPage } from './demos/badge/badge-suffix/badge-suffix.page';
-
-
-
+import { ButtonAppearancesPage } from './demos/button/button-appearances/button-appearances.page';
+import { ButtonDecorationPage } from './demos/button/button-decoration/button-decoration.page';
+import { ButtonDisabledPage } from './demos/button/button-disabled/button-disabled.page';
+import { ButtonSizesPage } from './demos/button/button-sizes/button-sizes.page';
 
 import * as en from '../assets/locale/en.json';
 import * as fa from '../assets/locale/fa.json';
-import { AXAlertModule, AXBadgeModule, AXEditorDecoratorModule, AXIconModule } from '@acorex/components';
+import {
+  AXAlertModule,
+  AXBadgeModule,
+  AXEditorDecoratorModule,
+  AXIconModule,
+} from '@acorex/components';
 
 export function initApp() {
   return () => {
@@ -32,25 +38,39 @@ export function initApp() {
   };
 }
 
-
-const MODULES: any = [AXCoreModule, AXAlertModule,AXBadgeModule,AXIconModule,AXEditorDecoratorModule,AXIconModule];
-const PAGES: any = [AlertAdditionalPage, AlertAppearancePage, AlertButtonsPage, AlertMethodsPage, AlertRightlinkPage, BadgeColorsPage, BadgeCustomePage, BadgeImportPage, BadgePrefixPage, BadgeSuffixPage]
-const SERVICES: any = [AXHotkeysService]
+const MODULES: any = [
+  AXCoreModule,
+  AXAlertModule,
+  AXBadgeModule,
+  AXIconModule,
+  AXEditorDecoratorModule,
+  AXIconModule,
+];
+const PAGES: any = [
+  AlertAdditionalPage,
+  AlertAppearancePage,
+  AlertButtonsPage,
+  AlertMethodsPage,
+  AlertRightlinkPage,
+  BadgeColorsPage,
+  BadgeCustomePage,
+  BadgeImportPage,
+  BadgePrefixPage,
+  BadgeSuffixPage,
+  ButtonAppearancesPage,
+  ButtonDecorationPage,
+  ButtonDisabledPage,
+  ButtonSizesPage,
+];
+const SERVICES: any = [AXHotkeysService];
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    ...PAGES
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    ...MODULES,
-  ],
+  declarations: [AppComponent, ...PAGES],
+  imports: [BrowserModule, AppRoutingModule, ...MODULES],
   providers: [
     ...SERVICES,
-    { provide: APP_INITIALIZER, useFactory: initApp, multi: true, deps: [] }
+    { provide: APP_INITIALIZER, useFactory: initApp, multi: true, deps: [] },
   ],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
