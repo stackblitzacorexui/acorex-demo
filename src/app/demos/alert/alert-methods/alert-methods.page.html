@@ -1,1 +1,14 @@
-<h1>alert Methodss</h1>
+<ax-alert color="danger" #alert1>
+    <ax-alert-content>
+        The username or password is incorrect.
+    </ax-alert-content>
+    <ax-alert-suffix>
+        <ax-alert-button title="Dismiss" (onClick)="alert1.dismiss()"></ax-alert-button>
+    </ax-alert-suffix>
+</ax-alert>
+<div class="ax-flex ax-my-4">
+    <ax-button text="Show" color="info" look="twotone" (onClick)="alert1.show()"></ax-button>
+    <div class="ax-px-2">
+    </div>
+    <ax-button text="Hide" color="danger" look="twotone" (onClick)="alert1.hide()"></ax-button>
+</div>

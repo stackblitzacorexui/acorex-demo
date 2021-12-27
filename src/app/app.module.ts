@@ -53,6 +53,14 @@ const MODULES: any = [
   AXIconModule,
   AXButtonModule,
   AXLoadingModule,
+  AXCoreModule,
+  AXAlertModule,
+  AXCoreModule,
+  AXAlertModule,
+  AXBadgeModule,
+  AXIconModule,
+  AXEditorDecoratorModule,
+  AXButtonModule,
 ];
 const PAGES: any = [
   AlertAdditionalPage,
@@ -71,7 +79,13 @@ const PAGES: any = [
   ButtonDisabledPage,
   ButtonSizesPage,
   ButtonToggleablePage,
+  AlertAdditionalPage,
+  AlertAppearancePage,
+  AlertButtonsPage,
+  AlertMethodsPage,
+  AlertRightlinkPage,
 ];
+
 const SERVICES: any = [AXHotkeysService];
 
 @NgModule({
