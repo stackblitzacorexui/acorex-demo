@@ -16,6 +16,9 @@ import { ButtonDecorationPage } from './demos/button/button-decoration/button-de
 import { ButtonDisabledPage } from './demos/button/button-disabled/button-disabled.page';
 import { ButtonSizesPage } from './demos/button/button-sizes/button-sizes.page';
 import { ButtonToggleablePage } from './demos/button/button-toggleable/button-toggleable.page';
+import { ButtonGroupSingle } from './demos/button-group/button-group-single/button-group-single.page';
+import { ButtonGroupBasic } from './demos/button-group/button-group-basic/button-group-basic.page';
+import { ButtonGroupMulti } from './demos/button-group/button-group-multi/button-group-multi.page';
 
 const routes: Routes = [
   {
@@ -87,6 +90,18 @@ const routes: Routes = [
   {
     path: 'button/button-toggleable',
     component: ButtonToggleablePage,
+  },
+  {
+    path: 'button-group/button-group-single',
+    component: ButtonGroupSingle,
+  },
+  {
+    path: 'button-group/button-group-basic',
+    component: ButtonGroupBasic,
+  },
+  {
+    path: 'button-group/button-group-multi',
+    component: ButtonGroupMulti,
   },
 ];
 

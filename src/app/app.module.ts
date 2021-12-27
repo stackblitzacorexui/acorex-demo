@@ -31,6 +31,9 @@ import {
 } from '@acorex/components';
 
 import { BadgeSizePage } from './demos/badge/badge-size/badge-size.page';
+import { ButtonGroupBasic } from './demos/button-group/button-group-basic/button-group-basic.page';
+import { ButtonGroupMulti } from './demos/button-group/button-group-multi/button-group-multi.page';
+import { ButtonGroupSingle } from './demos/button-group/button-group-single/button-group-single.page';
 
 import { ButtonToggleablePage } from './demos/button/button-toggleable/button-toggleable.page';
 
@@ -84,6 +87,9 @@ const PAGES: any = [
   AlertButtonsPage,
   AlertMethodsPage,
   AlertRightlinkPage,
+  ButtonGroupBasic,
+  ButtonGroupMulti,
+  ButtonGroupSingle,
 ];
 
 const SERVICES: any = [AXHotkeysService];
