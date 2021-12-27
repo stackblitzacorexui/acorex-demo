@@ -14,6 +14,10 @@ import { BadgeCustomePage } from './demos/badge/badge-custom/badge-custom.page';
 import { BadgeImportPage } from './demos/badge/badge-import/badge-import.page';
 import { BadgePrefixPage } from './demos/badge/badge-prefix/badge-prefix.page';
 import { BadgeSuffixPage } from './demos/badge/badge-suffix/badge-suffix.page';
+import { ButtonAppearancesPage } from './demos/button/button-appearances/button-appearances.page';
+import { ButtonDecorationPage } from './demos/button/button-decoration/button-decoration.page';
+import { ButtonDisabledPage } from './demos/button/button-disabled/button-disabled.page';
+import { ButtonSizesPage } from './demos/button/button-sizes/button-sizes.page';
 
 import * as en from '../assets/locale/en.json';
 import * as fa from '../assets/locale/fa.json';
@@ -22,8 +26,13 @@ import {
   AXBadgeModule,
   AXEditorDecoratorModule,
   AXIconModule,
+  AXLoadingModule,
+  AXButtonModule,
 } from '@acorex/components';
+
 import { BadgeSizePage } from './demos/badge/badge-size/badge-size.page';
+
+import { ButtonToggleablePage } from './demos/button/button-toggleable/button-toggleable.page';
 
 export function initApp() {
   return () => {
@@ -42,6 +51,8 @@ const MODULES: any = [
   AXIconModule,
   AXEditorDecoratorModule,
   AXIconModule,
+  AXButtonModule,
+  AXLoadingModule,
 ];
 const PAGES: any = [
   AlertAdditionalPage,
@@ -55,6 +66,11 @@ const PAGES: any = [
   BadgePrefixPage,
   BadgeSuffixPage,
   BadgeSizePage,
+  ButtonAppearancesPage,
+  ButtonDecorationPage,
+  ButtonDisabledPage,
+  ButtonSizesPage,
+  ButtonToggleablePage,
 ];
 const SERVICES: any = [AXHotkeysService];
 
