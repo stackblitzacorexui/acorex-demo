@@ -24,6 +24,7 @@ import * as fa from '../assets/locale/fa.json';
 import {
   AXAlertModule,
   AXBadgeModule,
+  AXButtonModule,
   AXEditorDecoratorModule,
   AXIconModule,
 } from '@acorex/components';
@@ -45,6 +46,7 @@ const MODULES: any = [
   AXIconModule,
   AXEditorDecoratorModule,
   AXIconModule,
+  AXButtonModule,
 ];
 const PAGES: any = [
   AlertAdditionalPage,
