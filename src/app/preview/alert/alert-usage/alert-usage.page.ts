@@ -2,10 +2,9 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-alert-usage',
-  templateUrl: './alert-usage.component.html',
-  styleUrls: ['./alert-usage.component.scss']
+  templateUrl: './alert-usage.page.html'
 })
-export class AlertUsageComponent implements OnInit {
+export class AlertUsagePage implements OnInit {
 
   constructor() { }
 

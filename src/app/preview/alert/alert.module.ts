@@ -10,15 +10,18 @@ import { AlertAppearancePage } from './alert-appearance/alert-appearance.page';
 import { AlertButtonsPage } from './alert-buttons/alert-buttons.page';
 import { AlertMethodsPage } from './alert-methods/alert-methods.page';
 import { AlertRightLinkPage } from './alert-right-link/alert-rightlink.page';
+import { AlertUsagePage } from './alert-usage/alert-usage.page';
 
 const MODULES: any = [
     AXAlertModule,
     AXIconModule,
     AXEditorDecoratorModule,
-    AXButtonModule
+    AXButtonModule,
+    
 ]
 
 const PAGES: any = [
+    AlertUsagePage,
     AlertAdditionalPage,
     AlertAppearancePage,
     AlertButtonsPage,
