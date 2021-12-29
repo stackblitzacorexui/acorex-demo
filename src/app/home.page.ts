@@ -19,7 +19,10 @@ export class HomePage implements OnInit {
     routerItems:Routes = [];
     constructor(private router: Router) {
         this.routerItems = router.config.filter(c => c.path !== '' && c.path !== 'home')
-        this.routerItems.forEach(c=>c.loadChildren)
+        this.routerItems.forEach(c=>c.loadChildren?.apply(this))
+
+        console.log(this.routerItems);
+        
         
      }
 
