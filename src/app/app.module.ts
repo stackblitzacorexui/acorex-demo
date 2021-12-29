@@ -13,6 +13,8 @@ import {
   AXLoadingModule,
   AXButtonModule,
 } from '@acorex/components';
+import { CommonModule } from '@angular/common';
+import { HomePage } from './home.page';
 
 
 
@@ -36,8 +38,8 @@ const MODULES: any = [
 
 
 @NgModule({
-  declarations: [AppComponent],
-  imports: [BrowserModule, AppRoutingModule, ...MODULES],
+  declarations: [AppComponent,HomePage],
+  imports: [BrowserModule, AppRoutingModule,CommonModule, ...MODULES],
   providers: [
     { provide: APP_INITIALIZER, useFactory: initApp, multi: true, deps: [] },
   ],
