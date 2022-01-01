@@ -17,6 +17,10 @@ const routes: Routes = [
   {
     path: 'alert',
     loadChildren: () => import("./preview/alert/alert.module").then(a => a.AlertModule)
+  },
+  {
+    path: 'badge',
+    loadChildren: () => import("./preview/badge/badge.module").then(b => b.BadgeModule)
   }
 ];
 

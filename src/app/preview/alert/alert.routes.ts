@@ -7,6 +7,7 @@ import { AlertSuffixPage } from "./alert-suffix/alert-suffix.page";
 import { AlertUsagePage } from "./alert-usage/alert-usage.page";
 
 export const routes: Routes = [
+    { path: '', pathMatch: "full", redirectTo: 'alert-usage' },
     {
         path: 'alert-usage',
         component: AlertUsagePage,
