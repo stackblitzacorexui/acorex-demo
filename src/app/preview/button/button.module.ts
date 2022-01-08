@@ -11,6 +11,7 @@ import { ButtonLookPage } from "./button-look/button-look.page";
 import { ButtonSizesPage } from "./button-sizes/button-sizes.page";
 import { ButtonToggleablePage } from "./button-toggleable/button-toggleable.page";
 import { ButtonUsagePage } from "./button-usage/button-usage.page";
+import { ButtonPersonalizePage } from './button-personalize/button-personalize.page';
 
 
 
@@ -29,6 +30,7 @@ const PAGES: any = [
   ButtonDecorationPage,
   ButtonDisabledPage,
   ButtonLookPage,
+  ButtonPersonalizePage,
   ButtonSizesPage,
   ButtonToggleablePage
 ]
