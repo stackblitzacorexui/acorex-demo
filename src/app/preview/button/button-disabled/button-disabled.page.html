@@ -1,11 +1,7 @@
-<div class="ax-grid ax-grid-cols-7 ax-gap-4">
-  <ax-button text="Noraml" color="primary" disabled="true"> </ax-button>
-  <ax-button text="Outline" color="primary" disabled="true" look="outline">
-  </ax-button>
-  <ax-button text="Twotone" color="primary" disabled="true" look="twotone">
-  </ax-button>
-  <ax-button text="Blank" color="primary" disabled="true" look="blank">
-  </ax-button>
-  <ax-button text="Link" color="primary" disabled="true" look="link">
-  </ax-button>
+<div class="ax-flex">
+  <ax-button class="ax-me-2" color="primary" [disabled]="true" look="default" text="Default"></ax-button>
+  <ax-button class="ax-me-2" color="primary" [disabled]="true" look="twotone" text="Twotone"></ax-button>
+  <ax-button class="ax-me-2" color="primary" [disabled]="true" look="outline" text="Outline"></ax-button>
+  <ax-button class="ax-me-2" color="primary" [disabled]="true" look="link" text="Link"></ax-button>
+  <ax-button class="ax-me-2" color="primary" [disabled]="true" look="blank" text="Blank"></ax-button>
 </div>
