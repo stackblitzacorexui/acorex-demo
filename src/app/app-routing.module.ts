@@ -25,12 +25,16 @@ const routes: Routes = [
   {
     path: 'button',
     loadChildren: () => import("./preview/button/button.module").then(b => b.ButtonModule)
+  },
+  {
+    path: 'button-group',
+    loadChildren: () => import("./preview/button-group/badge.module").then(b => b.ButtonGroupModule)
   }
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes,{
-    preloadingStrategy:PreloadAllModules
+    preloadingStrategy: PreloadAllModules
   })],
   exports: [RouterModule],
 })
