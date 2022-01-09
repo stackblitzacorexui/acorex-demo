@@ -8,11 +8,8 @@ const routes: Routes = [
   {
     path: '',
     pathMatch: 'full',
-    redirectTo: 'home',
-  },
-  {
-    path: 'home',
     component: HomePage
+
   },
   {
     path: 'alert',
@@ -28,7 +25,7 @@ const routes: Routes = [
   },
   {
     path: 'button-group',
-    loadChildren: () => import("./preview/button-group/badge.module").then(b => b.ButtonGroupModule)
+    loadChildren: () => import("./preview/button-group/button-group.module").then(b => b.ButtonGroupModule)
   }
 ];
 

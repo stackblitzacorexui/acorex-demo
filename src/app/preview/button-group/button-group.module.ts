@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 
-import {  AXBadgeModule, AXButtonModule, AXEditorDecoratorModule, AXIconModule } from '@acorex/components';
+import {  AXButtonModule, AXEditorDecoratorModule, AXIconModule } from '@acorex/components';
 import { routes } from './button-group.routes';
 import { ButtonGroupUsage } from './button-group-usage/button-group-usage.page';
 import { ButtonGroupSingle } from './button-group-single/button-group-single.page';

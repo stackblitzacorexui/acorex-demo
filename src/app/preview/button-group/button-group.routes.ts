@@ -6,7 +6,7 @@ import { ButtonGroupUsage } from "./button-group-usage/button-group-usage.page";
 
 
 export const routes: Routes = [
-    { path: '', pathMatch: "full", redirectTo: 'badge-usage' },
+    { path: '', pathMatch: "full", redirectTo: 'button-group-usage' },
     {
         path: 'button-group-usage',
         component: ButtonGroupUsage,
