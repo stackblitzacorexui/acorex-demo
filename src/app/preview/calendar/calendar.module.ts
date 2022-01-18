@@ -7,6 +7,7 @@ import { routes } from './calendar.routes';
 import { CalendarViewDepthPage } from './calendar-view-depth/calendar-view-depth.page';
 import { CalendarReadonlyPage } from './calendar-readonly/calendar-readonly.page';
 import { CalendarDisabledPage } from './calendar-disabled/calendar-disabled.page';
+import { CalendarDateRangePage } from './calendar-date-range/calendar-date-range.page';
 
 
 
@@ -20,7 +21,8 @@ const PAGES: any = [
     CalendarUsagePage,
     CalendarViewDepthPage,
     CalendarReadonlyPage,
-    CalendarDisabledPage
+    CalendarDisabledPage,
+    CalendarDateRangePage
 ]
 
 

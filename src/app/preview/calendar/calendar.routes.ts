@@ -1,4 +1,5 @@
 import { Routes } from "@angular/router";
+import { CalendarDateRangePage } from "./calendar-date-range/calendar-date-range.page";
 import { CalendarDisabledPage } from "./calendar-disabled/calendar-disabled.page";
 import { CalendarReadonlyPage } from "./calendar-readonly/calendar-readonly.page";
 import { CalendarUsagePage } from "./calendar-usage/calendar-usage.page";
@@ -22,5 +23,9 @@ export const routes: Routes = [
     {
         path: 'calendar-disabled',
         component: CalendarDisabledPage,
+    },
+    {
+        path: 'calendar-date-range',
+        component: CalendarDateRangePage,
     }
 ]
