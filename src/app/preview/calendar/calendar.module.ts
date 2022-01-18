@@ -6,6 +6,7 @@ import { CalendarUsagePage } from './calendar-usage/calendar-usage.page';
 import { routes } from './calendar.routes';
 import { CalendarViewDepthPage } from './calendar-view-depth/calendar-view-depth.page';
 import { CalendarReadonlyPage } from './calendar-readonly/calendar-readonly.page';
+import { CalendarDisabledPage } from './calendar-disabled/calendar-disabled.page';
 
 
 
@@ -18,7 +19,8 @@ const MODULES: any = [
 const PAGES: any = [
     CalendarUsagePage,
     CalendarViewDepthPage,
-    CalendarReadonlyPage
+    CalendarReadonlyPage,
+    CalendarDisabledPage
 ]
 
 
