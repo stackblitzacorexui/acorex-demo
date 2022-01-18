@@ -26,6 +26,10 @@ const routes: Routes = [
   {
     path: 'button-group',
     loadChildren: () => import("./preview/button-group/button-group.module").then(b => b.ButtonGroupModule)
+  },
+  {
+    path: 'calendar',
+    loadChildren: () => import("./preview/calendar/calendar.module").then(c => c.CaledarModule)
   }
 ];
 

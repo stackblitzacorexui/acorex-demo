@@ -1,0 +1,6 @@
+<div class="ax-m-3">
+  <ax-selection-list [multiple]="false" [items]="_depths" #dep [value]="'days'"></ax-selection-list>
+</div>
+<div class="ax-w-80">
+  <ax-calendar [depth]="dep?.['value']"  (onValueChanged)="_handleValueChanged($event)"></ax-calendar>
+</div>
