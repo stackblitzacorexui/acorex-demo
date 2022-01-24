@@ -8,6 +8,7 @@ import { CheckBoxWithLabelPage } from './checkbox-with-label/checkbox-with-label
 import { CheckBoxWithHintPage } from './checkbox-with-hint/checkbox-with-hint.page';
 import { CheckboxReadonlyPage } from './checkbox-readonly/checkbox-readonly.page';
 import { CheckboxDisabledPage } from './checkbox-disabled/checkbox-disabled.page';
+import { CheckboxIndeterminatePage } from './checkbox-indeterminate/checkbox-indeterminate.page';
 
 
 
@@ -24,7 +25,8 @@ const PAGES: any = [
     CheckBoxWithLabelPage,
     CheckBoxWithHintPage,
     CheckboxReadonlyPage,
-    CheckboxDisabledPage
+    CheckboxDisabledPage,
+    CheckboxIndeterminatePage
 ]
 
 
