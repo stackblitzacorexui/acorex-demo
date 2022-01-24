@@ -30,6 +30,10 @@ const routes: Routes = [
   {
     path: 'calendar',
     loadChildren: () => import("./preview/calendar/calendar.module").then(c => c.CaledarModule)
+  },
+  {
+    path: 'checkbox',
+    loadChildren: () => import("./preview/checkbox/checkbox.module").then(c => c.CheckboxModule)
   }
 ];
 

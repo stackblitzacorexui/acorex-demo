@@ -8,6 +8,7 @@ import { CalendarViewDepthPage } from './calendar-view-depth/calendar-view-depth
 import { CalendarReadonlyPage } from './calendar-readonly/calendar-readonly.page';
 import { CalendarDisabledPage } from './calendar-disabled/calendar-disabled.page';
 import { CalendarDateRangePage } from './calendar-date-range/calendar-date-range.page';
+import { CalendarDisabledDatesPage } from './calendar-disabled-dates/calendar-disabled-dates.page';
 
 
 
@@ -22,7 +23,8 @@ const PAGES: any = [
     CalendarViewDepthPage,
     CalendarReadonlyPage,
     CalendarDisabledPage,
-    CalendarDateRangePage
+    CalendarDateRangePage,
+    CalendarDisabledDatesPage
 ]
 
 
