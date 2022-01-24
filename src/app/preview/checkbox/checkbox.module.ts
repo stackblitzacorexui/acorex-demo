@@ -9,6 +9,7 @@ import { CheckBoxWithHintPage } from './checkbox-with-hint/checkbox-with-hint.pa
 import { CheckboxReadonlyPage } from './checkbox-readonly/checkbox-readonly.page';
 import { CheckboxDisabledPage } from './checkbox-disabled/checkbox-disabled.page';
 import { CheckboxIndeterminatePage } from './checkbox-indeterminate/checkbox-indeterminate.page';
+import { SharedModule } from 'src/app/shared/shared.module';
 
 
 
@@ -17,7 +18,8 @@ import { CheckboxIndeterminatePage } from './checkbox-indeterminate/checkbox-ind
 const MODULES: any = [
     AXCheckBoxModule,
     AXLabelModule,
-    AXFormModule
+    AXFormModule,
+    SharedModule
 ]
 
 const PAGES: any = [
