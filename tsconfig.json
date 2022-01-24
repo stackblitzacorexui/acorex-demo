@@ -2,22 +2,27 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
+    "paths": {
+      "@acorex/components": [
+        "dist/acorex/components/acorex-components",
+        "dist/acorex/components"
+      ],
+      "@acorex/core": [
+        "dist/acorex/core/acorex-core",
+        "dist/acorex/core"
+      ]
+    },
     "baseUrl": "./",
     "outDir": "./dist/out-tsc",
-    "resolveJsonModule": true,
-    "forceConsistentCasingInFileNames": true,
-    "strict": true,
-    "noImplicitOverride": true,
-    "noPropertyAccessFromIndexSignature": true,
-    "noImplicitReturns": true,
-    "noFallthroughCasesInSwitch": true,
     "sourceMap": true,
-    "declaration": false,
+    "declaration": true,
     "downlevelIteration": true,
     "experimentalDecorators": true,
     "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
     "importHelpers": true,
-    "target": "es2017",
+    "target": "es2020",
     "module": "es2020",
     "lib": [
       "es2020",
@@ -29,5 +34,22 @@
     "strictInjectionParameters": true,
     "strictInputAccessModifiers": true,
     "strictTemplates": true
+  },
+  "exclude": [
+    "node_modules",
+    "dist",
+    "**/*+(index|.spec|.e2e|.d).ts"
+  ],
+  "typedocOptions": {
+    "entryPoints": [
+      "./projects/acorex/components/src/public-api.ts",
+      "./projects/acorex/core/src/public-api.ts"
+    ],
+    "json": "src/assets/docs.json",
+    // "out": "docs",
+    "exclude": "**/*+(index|.spec|.e2e|.d).ts",
+    "excludeExternals": true,
+    "excludeNotDocumented": true,
+    "disableSources": true
   }
 }

@@ -15,11 +15,11 @@ export class RegisterUserPage extends AXBasePageComponent implements OnInit {
     }
     ngOnInit(): void { }
 
-    firstname: string;
-    lastname: string;
-    mobile: string;
-    email: string;
-    notification: boolean;
+    firstname: string = "";
+    lastname: string = "";
+    mobile: string = "";
+    email: string = "";
+    notification: boolean = false;
 
 
     _handleSubmitClick() {
