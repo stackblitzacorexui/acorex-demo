@@ -34,6 +34,10 @@ const routes: Routes = [
   {
     path: 'checkbox',
     loadChildren: () => import("./preview/checkbox/checkbox.module").then(c => c.CheckboxModule)
+  },
+  {
+    path: 'datepicker',
+    loadChildren: () => import("./preview/datepicker/datepicker.module").then(d => d.DatepickerModule)
   }
 ];
 
