@@ -5,33 +5,38 @@ import { CheckBoxWithHintPage } from "./checkbox-with-hint/checkbox-with-hint.pa
 import { CheckboxReadonlyPage } from "./checkbox-readonly/checkbox-readonly.page";
 import { CheckboxDisabledPage } from "./checkbox-disabled/checkbox-disabled.page";
 import { CheckboxIndeterminatePage } from "./checkbox-indeterminate/checkbox-indeterminate.page";
+import { CheckboxValidationPage } from "./checkbox-validation/checkbox-validation.page";
 
 
 
 export const routes: Routes = [
     { path: '', pathMatch: "full", redirectTo: 'calendar-usage' },
     {
-        path: 'calendar-usage',
+        path: 'checkbox-usage',
         component: CheckboxUsagePage,
     },
     {
-        path: 'calendar-with-label',
+        path: 'checkbox-with-label',
         component: CheckBoxWithLabelPage,
     },
     {
-        path: 'calendar-with-hint',
+        path: 'checkbox-with-hint',
         component: CheckBoxWithHintPage,
     },
     {
-        path: 'calendar-readonly',
+        path: 'checkbox-readonly',
         component: CheckboxReadonlyPage,
     },
     {
-        path: 'calendar-disabled',
+        path: 'checkbox-disabled',
         component: CheckboxDisabledPage,
     },
     {
-        path: 'calendar-indeterminate',
+        path: 'checkbox-indeterminate',
         component: CheckboxIndeterminatePage,
+    },
+    {
+        path: 'checkbox-validation',
+        component: CheckboxValidationPage,
     }
 ]

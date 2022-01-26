@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
-import {  AXCheckBoxModule, AXFormModule, AXLabelModule } from '@acorex/components';
+import {  AXButtonModule, AXCheckBoxModule, AXFormModule, AXLabelModule, AXValidationModule } from '@acorex/components';
 import { routes } from './checkbox.routes';
 import { CheckboxUsagePage } from './checkbox-usage/checkbox-usage.page';
 import { CheckBoxWithLabelPage } from './checkbox-with-label/checkbox-with-label.page';
@@ -10,6 +10,7 @@ import { CheckboxReadonlyPage } from './checkbox-readonly/checkbox-readonly.page
 import { CheckboxDisabledPage } from './checkbox-disabled/checkbox-disabled.page';
 import { CheckboxIndeterminatePage } from './checkbox-indeterminate/checkbox-indeterminate.page';
 import { SharedModule } from 'src/app/shared/shared.module';
+import { CheckboxValidationPage } from './checkbox-validation/checkbox-validation.page';
 
 
 
@@ -19,6 +20,8 @@ const MODULES: any = [
     AXCheckBoxModule,
     AXLabelModule,
     AXFormModule,
+    AXButtonModule,
+    AXValidationModule,
     SharedModule
 ]
 
@@ -28,7 +31,8 @@ const PAGES: any = [
     CheckBoxWithHintPage,
     CheckboxReadonlyPage,
     CheckboxDisabledPage,
-    CheckboxIndeterminatePage
+    CheckboxIndeterminatePage,
+    CheckboxValidationPage
 ]
 
 
