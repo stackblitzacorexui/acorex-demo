@@ -2,8 +2,6 @@ import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 import { HomePage } from './home.page';
 
-
-
 const routes: Routes = [
   {
     path: '',
@@ -38,6 +36,10 @@ const routes: Routes = [
   {
     path: 'datepicker',
     loadChildren: () => import("./preview/datepicker/datepicker.module").then(d => d.DatepickerModule)
+  },
+  {
+    path: 'dialog',
+    loadChildren: () => import("./preview/dialog/dialog.module").then(d => d.DialogModule)
   }
 ];
 
