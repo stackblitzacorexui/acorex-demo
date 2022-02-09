@@ -1,0 +1,16 @@
+<div class="ax-py-4">
+    <ax-form #form>
+        <ax-form-field>
+            <ax-check-box [(value)]="termAccepted">
+                <ax-label>I agree to the <a class="ax-text-primary-500 ax-underline" href="#"> Terms &
+                        Conditions
+                    </a></ax-label>
+                <ax-form-hint>You will receive our latest updates and promotions on your</ax-form-hint>
+                <ax-validation-rule rule="required"
+                    message="Please tick above  to aggree Terms & Conditions">
+                </ax-validation-rule>
+            </ax-check-box>
+        </ax-form-field>
+        <ax-button class="ax-mt-4" color="dark" text="Submit" (onClick)="handleSubmitForm()"></ax-button>
+    </ax-form>
+</div>
