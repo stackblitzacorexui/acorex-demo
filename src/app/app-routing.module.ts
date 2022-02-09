@@ -40,6 +40,10 @@ const routes: Routes = [
   {
     path: 'dialog',
     loadChildren: () => import("./preview/dialog/dialog.module").then(d => d.DialogModule)
+  },
+  {
+    path: 'switch',
+    loadChildren: () => import("./preview/switch/switch.module").then(d => d.SwitchModule)
   }
 ];
 
