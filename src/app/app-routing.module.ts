@@ -44,6 +44,10 @@ const routes: Routes = [
   {
     path: 'switch',
     loadChildren: () => import("./preview/switch/switch.module").then(d => d.SwitchModule)
+  },
+  {
+    path: 'number-box',
+    loadChildren: () => import("./preview/number-box/number-box.module").then(d => d.NumberBoxModule)
   }
 ];
 

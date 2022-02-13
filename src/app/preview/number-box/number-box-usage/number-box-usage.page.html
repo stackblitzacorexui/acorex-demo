@@ -1,0 +1,58 @@
+<div class="ax-grid ax-gap-4">
+    <div class="ax-col-span-6">
+        <ax-form-field>
+            <ax-label>Type number here</ax-label>
+            <ax-number-box [decimals]="_opt2.decimals" #ff allowNull="true" [minValue]="_opt2.minValue"
+                [maxValue]="_opt2.maxValue"
+                placeholder="Enter a number between {{_opt2.minValue}} and {{_opt2.maxValue}}"
+                [thousandsSeparator]="_opt2.separator" [(value)]="value"
+                [padDecimalZeros]="_opt2.padDecimalZeros">
+            </ax-number-box>
+        </ax-form-field>
+    </div>
+    <div class="ax-col-span-6 ax-bg-info-100 ax-p-4 ax-text-sm">
+        <span class="ax-text-info-700 ax-font-semibold ">Unmasked
+            Value:</span>&nbsp;&nbsp;<span>{{value}}</span>
+    </div>
+    <fieldset>
+        <legend>Options</legend>
+        <div class="ax-col-span-6 md:ax-col-span-6 lg:ax-col-span-2">
+            <ax-form-field>
+                <ax-label>Decimals</ax-label>
+                <ax-number-box [(value)]="_opt.decimals" [minValue]="0" [maxValue]="10" allowNull="false">
+                </ax-number-box>
+            </ax-form-field>
+        </div>
+        <div class="ax-col-span-3 lg:ax-col-span-2">
+            <ax-form-field>
+                <ax-label>Min</ax-label>
+                <ax-number-box [(value)]="_opt.minValue" allowNull="false">
+                </ax-number-box>
+            </ax-form-field>
+        </div>
+        <div class="ax-col-span-3 lg:ax-col-span-2">
+            <ax-form-field>
+                <ax-label>Max</ax-label>
+                <ax-number-box [(value)]="_opt.maxValue" allowNull="false">
+                </ax-number-box>
+            </ax-form-field>
+        </div>
+        <div class="ax-col-span-3 lg:ax-col-span-2">
+            <ax-form-field>
+                <ax-label>Thousands separator</ax-label>
+                <ax-text-box [(value)]="_opt.separator"></ax-text-box>
+            </ax-form-field>
+        </div>
+        <div class="ax-col-span-3 lg:ax-col-span-2">
+            <ax-form-field>
+                <ax-label>&nbsp;</ax-label>
+                <ax-check-box>Pad fractional zeros</ax-check-box>
+            </ax-form-field>
+        </div>
+        <div class="ax-col-span-6">
+            <ax-button color="primary" look="twotone" text="Apply" class="ax-w-full"
+                (onClick)="_handleApplyClick($event);ff.focus()">
+            </ax-button>
+        </div>
+    </fieldset>
+</div>
