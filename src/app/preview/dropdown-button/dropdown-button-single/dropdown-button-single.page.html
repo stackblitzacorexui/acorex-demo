@@ -1,0 +1,19 @@
+<div #demo>
+    <ax-button text="Action">
+        <ax-dropdown-panel (onItemClick)="_handleOnItemClick(demo, $event)">
+            <ax-button-item text="Save as..." name="saveAs">
+                <ax-prefix>
+                    <ax-icon icon="far fa-save"></ax-icon>
+                </ax-prefix>
+            </ax-button-item>
+            <ax-button-item text="Delete" color="danger" name="delete">
+                <ax-prefix>
+                    <ax-icon icon="far fa-trash"></ax-icon>
+                </ax-prefix>
+            </ax-button-item>
+        </ax-dropdown-panel>
+        <ax-suffix>
+            <ax-icon icon="far fas fa-angle-down"></ax-icon>
+        </ax-suffix>
+    </ax-button>
+</div>

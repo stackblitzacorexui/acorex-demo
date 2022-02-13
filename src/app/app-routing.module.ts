@@ -48,7 +48,11 @@ const routes: Routes = [
   {
     path: 'number-box',
     loadChildren: () => import("./preview/number-box/number-box.module").then(d => d.NumberBoxModule)
-  }
+  },
+  {
+    path: 'dropdown-button',
+    loadChildren: () => import("./preview/dropdown-button/dropdown-button.module").then(d => d.DropdownButtonModule)
+  },
 ];
 
 @NgModule({
