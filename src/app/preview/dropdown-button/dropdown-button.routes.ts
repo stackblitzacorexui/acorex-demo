@@ -8,7 +8,7 @@ import { DropdownButtonSplitPage } from "./dropdown-button-split/dropdown-button
 
 
 export const routes: Routes = [
-    { path: '', pathMatch: "full", redirectTo: 'number-box-usage' },
+    { path: '', pathMatch: "full", redirectTo: 'dropdown-button-split' },
     {
         path: 'dropdown-button-split',
         component: DropdownButtonSplitPage,

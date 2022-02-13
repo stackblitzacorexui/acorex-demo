@@ -1,0 +1,9 @@
+<ax-form-field>
+  <ax-label>Select persons</ax-label>
+  <ax-select-box  [items]="_names" [disabledCallback]="_isItemDisabled" [multiple]="true"
+      [checkbox]="true">
+      <ax-suffix>
+          <ax-button text="Hi" color="primary" look="blank"></ax-button>
+      </ax-suffix>
+  </ax-select-box>
+</ax-form-field>

@@ -53,6 +53,10 @@ const routes: Routes = [
     path: 'dropdown-button',
     loadChildren: () => import("./preview/dropdown-button/dropdown-button.module").then(d => d.DropdownButtonModule)
   },
+  {
+    path: 'select-box',
+    loadChildren: () => import("./preview/select-box/select-box.module").then(d => d.SelectBoxModule)
+  },
 ];
 
 @NgModule({
