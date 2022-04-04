@@ -57,6 +57,10 @@ const routes: Routes = [
     path: 'select-box',
     loadChildren: () => import("./preview/select-box/select-box.module").then(d => d.SelectBoxModule)
   },
+  {
+    path: 'password-box',
+    loadChildren: () => import("./preview/password-box/password-box.module").then(d => d.PasswordBoxModule)
+  },
 ];
 
 @NgModule({
