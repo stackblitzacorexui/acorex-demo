@@ -10,15 +10,11 @@ export class SelectionListVerticalePage implements OnInit {
   _names: string[];
 
   constructor(cdr: ChangeDetectorRef, private ds: DemoService) {
-        this._names = ds.getPersonNames();
     }
 
   ngOnInit() {}
   getBooks() {
     return this.ds.generateBooks().slice(0, 3)
 }
-getOneBook(){
-    return this.ds.generateBooks().slice(0,1)
-    
-}
+
 }

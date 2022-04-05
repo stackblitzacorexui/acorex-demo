@@ -9,7 +9,6 @@ export class SelectBoxShowCheckboxesPage implements OnInit {
   _names: string[];
 
   constructor(cdr: ChangeDetectorRef, private ds: DemoService) {
-        this._names = ds.getPersonNames();
     }
 
 

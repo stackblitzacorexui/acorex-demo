@@ -9,7 +9,6 @@ export class SelectionListSizePage {
   _names: string[];
 
   constructor(cdr: ChangeDetectorRef, private ds: DemoService) {
-      this._names = ds.getPersonNames();
   }
   getOneBook(){
     return this.ds.generateBooks().slice(0,1)
