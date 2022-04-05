@@ -4,6 +4,7 @@ import { Injectable } from '@angular/core';
 import { take } from 'lodash-es';
 import { Observable, of } from 'rxjs';
 import { delay } from 'rxjs/operators';
+import * as Countries from "../../assets/data/Countries_by_continent.json"
 
 @Injectable({ providedIn: 'root' })
 export class DemoService {
@@ -302,5 +303,14 @@ export class DemoService {
         }).pipe(delay(1000));
     }
 
+ 
+    getContinentList(): Observable<string[]> {
+        return of((Array.from(Countries).map(c => c.continent)));
+     //   return of(_.orderBy(Array.from(Countries).map(c => c.continent)));
+    }
+    getCountriesList(continent: string): Observable<string[]> {
+        return of((Array.from(Countries).filter(c => continent == 'all' || c.continent == continent).map(c => c.country)));
+      //  return of(_.orderBy(Array.from(Countries).filter(c => continent == 'all' || c.continent == continent).map(c => c.country)));
+    }
 
 }
