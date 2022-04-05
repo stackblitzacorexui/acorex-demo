@@ -2,10 +2,10 @@ import { ChangeDetectorRef, Component, OnInit } from '@angular/core';
 import { DemoService } from '../../demo.service';
 
 @Component({
-  selector: 'app-select-box-signle',
-  templateUrl: './select-box-signle.page.html',
+  selector: 'app-selection-list-vertical',
+  templateUrl: './selection-list-vertical.page.html',
 })
-export class SelectBoxSignlePage implements OnInit {
+export class SelectionListVerticalePage implements OnInit {
 
   _names: string[];
 
@@ -14,4 +14,11 @@ export class SelectBoxSignlePage implements OnInit {
     }
 
   ngOnInit() {}
+  getBooks() {
+    return this.ds.generateBooks().slice(0, 3)
+}
+getOneBook(){
+    return this.ds.generateBooks().slice(0,1)
+    
+}
 }

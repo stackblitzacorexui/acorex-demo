@@ -58,6 +58,10 @@ const routes: Routes = [
     loadChildren: () => import("./preview/select-box/select-box.module").then(d => d.SelectBoxModule)
   },
   {
+    path: 'selection-list',
+    loadChildren: () => import("./preview/selection-list/selection-list.module").then(d => d.SelectListModule)
+  },
+  {
     path: 'password-box',
     loadChildren: () => import("./preview/password-box/password-box.module").then(d => d.PasswordBoxModule)
   },
