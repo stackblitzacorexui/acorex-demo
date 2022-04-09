@@ -77,6 +77,10 @@ const routes: Routes = [
     path: 'textbox',
     loadChildren: () => import("./preview/textbox/textbox.module").then(d => d.TextboxModule)
   },
+  {
+    path: 'timebox',
+    loadChildren: () => import("./preview/timebox/timebox.module").then(d => d.TimeboxModule)
+  },
   
   
 ];

@@ -1,0 +1,55 @@
+<div class="ax-grid ax-grid-cols-6 ax-gap-4 ">
+  <div class="ax-col-span-6">
+      <ax-form-field>
+          <ax-label>Enter time</ax-label>
+          <ax-time-box #ff [(value)]="_selectedTime" [format]="_opt2.format"></ax-time-box>
+      </ax-form-field>
+  </div>
+  <div class="ax-grid ax-grid-cols-6 ax-col-span-6 ax-bg-info-100 ax-p-4 ax-text-sm">
+      <div class="ax-col-span-6 md:ax-col-span-3">
+          <span class="ax-text-info-700 ax-font-semibold ">Local Value:</span><span class="ax-ms-2">
+              {{_selectedTime?.toLocaleTimeString()}}</span>
+
+      </div>
+      <div class="ax-col-span-6 md:ax-col-span-3">
+          <span class="ax-text-info-700 ax-font-semibold ">JSON Value:</span><span class="ax-ms-2">
+              {{_selectedTime | json}}</span>
+      </div>
+  </div>
+  <fieldset>
+      <legend>Options</legend>
+      <div class="ax-col-span-6 md:ax-col-span-6 lg:ax-col-span-2">
+          <ax-form-field>
+              <ax-label>Format</ax-label>
+              <ax-select-box  [items]="['HH:mm','HH:mm:ss']" [(value)]="_opt.format"  allowNull="false">
+              </ax-select-box>
+          </ax-form-field>
+      </div>
+      <div class="ax-col-span-3 lg:ax-col-span-2">
+          <ax-form-field>
+              <ax-label>Min</ax-label>
+              <!-- <ax-number-box  allowNull="false">
+              </ax-number-box> -->
+          </ax-form-field>
+      </div>
+      <div class="ax-col-span-3 lg:ax-col-span-2">
+          <ax-form-field>
+              <ax-label>Max</ax-label>
+              <!-- <ax-number-box  allowNull="false">
+              </ax-number-box> -->
+          </ax-form-field>
+      </div>
+      <div class="ax-col-span-3 lg:ax-col-span-2">
+          
+      </div>
+      <div class="ax-col-span-3 lg:ax-col-span-2">
+        
+      </div>
+      <div class="ax-col-span-6">
+          <ax-button color="primary" tabindex="0" look="twotone" text="Apply" class="ax-w-full"
+              (onClick)="_handleApplyClick($event);ff.focus()">
+          </ax-button>
+      </div>
+  </fieldset>
+
+</div>
