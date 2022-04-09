@@ -81,6 +81,11 @@ const routes: Routes = [
     path: 'timebox',
     loadChildren: () => import("./preview/timebox/timebox.module").then(d => d.TimeboxModule)
   },
+  {
+    path: 'toast',
+    loadChildren: () => import("./preview/toast/toast.module").then(d => d.ToastModule)
+  },
+
   
   
 ];
