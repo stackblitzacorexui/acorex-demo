@@ -1,0 +1,19 @@
+<div class="ax-p-3">
+    <ax-tabs class="ax-look-custom">
+        <ax-tab-item
+            *ngFor="let tab of [{text:'Calls' , icon:'far fa-phone'},{text:'Messages' , icon:'far fa-comments'},{text:'Contacts' , icon:'far fa-address-book',active:true},{text:'Camera' , icon:'far fa-camera'}]"
+            [active]="tab.active">
+            <ng-template let-item #header>
+                <div class="ax-flex ax-flex-col ax-p-1 hover:ax-text-info-400"
+                    [class.ax-text-info-500]="item.active">
+                    <div>
+                        <ax-icon icon="far {{tab.icon}}" class="ax-text-2xl"></ax-icon>
+                    </div>
+                    <div>
+                        {{tab.text}}
+                    </div>
+                </div>
+            </ng-template>
+        </ax-tab-item>
+    </ax-tabs>
+</div>

@@ -1,0 +1,24 @@
+<div #demo5>
+    <div class="ax-p-3">
+        <ax-tabs [content]="cons" class="ax-look-start-line ax-mb-3 ax-vertical "
+            (onActiveTabChanged)="_handleActiveTabChanged(demo5,$event)">
+            <ax-tab-item text="Tab1" key="tab1">
+                <ax-content>
+                    <ax-text-box placeholder="content 1"></ax-text-box>
+                </ax-content>
+            </ax-tab-item>
+            <ax-tab-item text="Tab2" key="tab2">
+                <ax-content>
+                    <ax-text-box placeholder="content 2"></ax-text-box>
+                </ax-content>
+            </ax-tab-item>
+            <ax-tab-item text="Tab3" key="tab3">
+                <ax-content>
+                    <ax-text-box placeholder="content 3"></ax-text-box>
+                </ax-content>
+            </ax-tab-item>
+        </ax-tabs>
+    </div>
+    <ng-template [axTabContent] #cons="axTabContent">
+    </ng-template>
+</div>

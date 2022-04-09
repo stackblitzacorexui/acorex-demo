@@ -65,6 +65,10 @@ const routes: Routes = [
     path: 'password-box',
     loadChildren: () => import("./preview/password-box/password-box.module").then(d => d.PasswordBoxModule)
   },
+  {
+    path: 'tab',
+    loadChildren: () => import("./preview/tab/tab.module").then(d => d.TabModule)
+  },
 ];
 
 @NgModule({

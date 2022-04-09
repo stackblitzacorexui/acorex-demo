@@ -1,0 +1,10 @@
+<div class="ax-grid ax-grid-cols-1 ax-divide-y-2 ax-divide-dashed ax-p-3">
+    <div class="ax-grid ax-grid-cols-8 ax-py-3 ax-px-2"
+        *ngFor="let item of ['ax-look-default','ax-look-pills ','ax-look-pills-color','ax-look-start-line','ax-look-end-line']">
+        <span class="ax-col-span-1 ax-items-center ax-flex ax-font-semibold">{{item.substring(8)}}</span>
+        <ax-tabs [class]="item" class="ax-col-span-6">
+            <ax-tab-item text="Tab {{i}}" *ngFor="let i of [1,2,3,4]">
+            </ax-tab-item>
+        </ax-tabs>
+    </div>
+</div>

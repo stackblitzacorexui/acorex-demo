@@ -10,7 +10,7 @@ import { SelectionListSizePage } from "./selection-list-size/selection-list-size
 import { SelectionListVerticalePage } from "./selection-list-vertical/selection-list-vertical.page";
 
 export const routes: Routes = [
-    { path: '', pathMatch: "full", redirectTo: 'select-box-signle' },
+    { path: '', pathMatch: "full", redirectTo: 'selection-list-vertical' },
     {
         path: 'selection-list-vertical',
         component: SelectionListVerticalePage,
