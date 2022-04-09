@@ -85,6 +85,10 @@ const routes: Routes = [
     path: 'toast',
     loadChildren: () => import("./preview/toast/toast.module").then(d => d.ToastModule)
   },
+  {
+    path: 'tree-view',
+    loadChildren: () => import("./preview/tree-view/tree-view.module").then(d => d.TreeModule)
+  },
 
   
   
