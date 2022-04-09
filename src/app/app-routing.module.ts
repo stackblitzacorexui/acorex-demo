@@ -69,6 +69,11 @@ const routes: Routes = [
     path: 'tab',
     loadChildren: () => import("./preview/tab/tab.module").then(d => d.TabModule)
   },
+  {
+    path: 'textarea',
+    loadChildren: () => import("./preview/textarea/textarea.module").then(d => d.TextareaModule)
+  },
+  
 ];
 
 @NgModule({

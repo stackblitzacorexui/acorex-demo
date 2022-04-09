@@ -34,4 +34,4 @@ textareaRowPage
     exports: [...PAGES],
     providers: [],
 })
-export class TabModule { }
+export class TextareaModule { }
