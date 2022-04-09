@@ -73,6 +73,11 @@ const routes: Routes = [
     path: 'textarea',
     loadChildren: () => import("./preview/textarea/textarea.module").then(d => d.TextareaModule)
   },
+  {
+    path: 'textbox',
+    loadChildren: () => import("./preview/textbox/textbox.module").then(d => d.TextboxModule)
+  },
+  
   
 ];
 

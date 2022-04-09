@@ -1,0 +1,21 @@
+<div class="ax-grid">
+  <ax-form-field>
+      <ax-label>Phone Number</ax-label>
+      <ax-text-box placeholder="(000) 000-0000">
+          <ax-input-mask mask="(000) 000-0000"></ax-input-mask>
+      </ax-text-box>
+  </ax-form-field>
+  <ax-form-field>
+      <ax-label>Decimal Value</ax-label>
+      <ax-text-box placeholder="[0].00">
+          <ax-input-mask [mask]="_mask_num" suffix=" $"></ax-input-mask>
+      </ax-text-box>
+  </ax-form-field>
+  <ax-form-field>
+      <ax-label>Date</ax-label>
+      <ax-text-box placeholder="9999-99-99">
+          <ax-input-mask mask="9999-99-99"></ax-input-mask>
+      </ax-text-box>
+  </ax-form-field>
+  
+</div>
