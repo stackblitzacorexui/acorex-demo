@@ -89,7 +89,10 @@ const routes: Routes = [
     path: 'tree-view',
     loadChildren: () => import("./preview/tree-view/tree-view.module").then(d => d.TreeModule)
   },
-
+  {
+    path: 'table',
+    loadChildren: () => import("./preview/table/table.module").then(d => d.TableModule)
+  },
   
   
 ];
