@@ -16,7 +16,5 @@ export class CalendarDateRangePage implements OnInit {
   }
 
   _handleValueChanged(e:any){
-    console.log(e);
-    
   }
 }
