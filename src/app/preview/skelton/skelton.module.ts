@@ -5,7 +5,7 @@ import { AXButtonModule, AXLoadingModule } from '@acorex/components';
 import { routes } from './skelton.routes';
 import { SkeltonUsagePage } from './skelton-usage/skelton-usage.page';
 import { SkeltonSimpleModePage } from './skelton-simple-mode/skelton-simple-mode.page';
-import { SkeltonAnimationModePage } from './skelton-animatin-mode/skelton-animation-mode.page';
+import { SkeltonAnimationModePage } from './skelton-animation-mode/skelton-animation-mode.page';
 
 
 
