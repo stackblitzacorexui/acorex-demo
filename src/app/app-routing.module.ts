@@ -97,7 +97,10 @@ const routes: Routes = [
     path: 'skelton',
     loadChildren: () => import("./preview/skelton/skelton.module").then(d => d.SkeltonModule)
   },
-  
+  {
+    path: 'rating',
+    loadChildren: () => import("./preview/rating/rating.module").then(d => d.RatingModule)
+  },
   
 ];
 

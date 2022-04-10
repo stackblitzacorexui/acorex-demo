@@ -1,0 +1,5 @@
+<div class="ax-rating-container" #stars>
+    <ng-container *ngFor="let item of items">
+        <span class="ax-rating-start ax-ic-star-outline ax-text-2xl" (click)="handleStarClick(item)"></span>
+    </ng-container>
+</div>
