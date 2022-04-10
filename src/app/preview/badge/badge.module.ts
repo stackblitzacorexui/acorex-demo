@@ -8,6 +8,7 @@ import { BadgeAppearancePage } from './badge-appearance/badge-appearance.page';
 import { BadgePersonalizePage } from './badge-personalize/badge-personalize.page';
 import { BadgeSizesPage } from './badge-sizes/badge-sizes.page';
 import { BadgeUsagePage } from './badge-usage/badge-usage.page';
+import { BadgeLockPage } from './badge-lock/badge-lock.page';
 
 
 
@@ -22,7 +23,8 @@ const PAGES: any = [
    BadgeAppearancePage,
    BadgePersonalizePage,
    BadgeSizesPage,
-    BadgeUsagePage
+    BadgeUsagePage,
+    BadgeLockPage
 ]
 
 
