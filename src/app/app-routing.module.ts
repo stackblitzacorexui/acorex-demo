@@ -105,6 +105,10 @@ const routes: Routes = [
     path: 'radio-button',
     loadChildren: () => import("./preview/radio-button/radio-button.module").then(d => d.RadioButtonModule)
   },
+  {
+    path: 'progressbar',
+    loadChildren: () => import("./preview/progressbar/progressbar.module").then(d => d.ProgressbarModule)
+  },
   
 ];
 

@@ -8,10 +8,6 @@ import { RadioButtonUsagePage } from './radio-button-usage/radio-button-usage.pa
 import { RadioButtonWithHintPage } from './radio-button-with-hint/radio-button-with-hint.page';
 import { RadioButtonDisabledPage } from './radio-button-disabled/radio-button-disabled.page';
 
-
-
-
-
 const MODULES: any = [
     AXRadioModule,
     AXLabelModule,
