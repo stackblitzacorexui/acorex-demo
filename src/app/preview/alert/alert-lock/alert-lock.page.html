@@ -1,0 +1,9 @@
+<ax-alert color="primary" *ngFor="let look of _looks" [look]="look.id" class="ax-my-4">
+    <ax-alert-content>
+        A simple <strong>{{look.text}}</strong> alert with <a href="#">an example link</a>. Give it
+        a click if you like.
+    </ax-alert-content>
+    <ax-alert-suffix>
+        <ax-alert-button text="Details"></ax-alert-button>
+    </ax-alert-suffix>
+</ax-alert>

@@ -312,5 +312,25 @@ export class DemoService {
         return of((Array.from(Countries).filter(c => continent == 'all' || c.continent == continent).map(c => c.country)));
       //  return of(_.orderBy(Array.from(Countries).filter(c => continent == 'all' || c.continent == continent).map(c => c.country)));
     }
+    getLooks(): any[] {
+        return [
+            {
+                text: 'Normal',
+                id: ''
+            },
+            {
+                text: 'TwoTone',
+                id: 'twotone'
+            },
+            {
+                text: 'Outline',
+                id: 'outline'
+            },
+            {
+                text: 'Blank',
+                id: 'blank'
+            }
+        ]
+    }
 
 }

@@ -11,6 +11,7 @@ import { AlertButtonsPage } from './alert-buttons/alert-buttons.page';
 import { AlertMethodsPage } from './alert-methods/alert-methods.page';
 import { AlertSuffixPage } from './alert-suffix/alert-suffix.page';
 import { AlertUsagePage } from './alert-usage/alert-usage.page';
+import { AlertLockPage } from './alert-lock/alert-lock.page';
 
 const MODULES: any = [
     AXAlertModule,
@@ -27,6 +28,8 @@ const PAGES: any = [
     AlertButtonsPage,
     AlertMethodsPage,
     AlertSuffixPage,
+    AlertLockPage
+
 ]
 
 
