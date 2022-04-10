@@ -101,6 +101,10 @@ const routes: Routes = [
     path: 'rating',
     loadChildren: () => import("./preview/rating/rating.module").then(d => d.RatingModule)
   },
+  {
+    path: 'radio-button',
+    loadChildren: () => import("./preview/radio-button/radio-button.module").then(d => d.RadioButtonModule)
+  },
   
 ];
 
