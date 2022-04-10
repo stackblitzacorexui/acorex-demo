@@ -12,3 +12,14 @@
     </div>
     <ax-button text="Hide" color="danger" look="twotone" (onClick)="alert1.hide()"></ax-button>
 </div>
+<ax-alert color="primary" #alert1>
+    <ax-alert-content>
+        Your password must be at least 8 characters
+    </ax-alert-content>
+    <ax-alert-suffix>
+        <ax-alert-button text="Dismiss" (onClick)="alert1.dismiss()"></ax-alert-button>
+    </ax-alert-suffix>
+</ax-alert>
+<ng-template #tpl>
+    Hi Rash
+</ng-template>

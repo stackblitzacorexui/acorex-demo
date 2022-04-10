@@ -6,11 +6,7 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './alert-methods.page.html',
 })
 export class AlertMethodsPage implements OnInit {
-
   constructor() { }
-
-  ngOnInit() {
-    
-  }
+  ngOnInit() {}
 
 }
