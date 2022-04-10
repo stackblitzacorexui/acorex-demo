@@ -109,6 +109,10 @@ const routes: Routes = [
     path: 'progressbar',
     loadChildren: () => import("./preview/progressbar/progressbar.module").then(d => d.ProgressbarModule)
   },
+  {
+    path: 'avatar',
+    loadChildren: () => import("./preview/avatar/avatar.module").then(d => d.AvatarModule)
+  },
   
 ];
 
