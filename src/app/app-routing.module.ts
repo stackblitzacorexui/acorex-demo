@@ -113,6 +113,10 @@ const routes: Routes = [
     path: 'avatar',
     loadChildren: () => import("./preview/avatar/avatar.module").then(d => d.AvatarModule)
   },
+  {
+    path: 'breadcrumbs',
+    loadChildren: () => import("./preview/breadcrumbs/breadcrumbs.module").then(d => d.BreadcrumbsnModule)
+  },
   
 ];
 
