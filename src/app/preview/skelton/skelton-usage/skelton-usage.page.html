@@ -1,0 +1,46 @@
+<ax-button text="Try it again" (onClick)="trySkelton()">
+  <ax-loading *ngIf="isLoading">
+  </ax-loading>
+</ax-button>
+<div class="ax-m-4"></div>
+<div class="ax-flex ax-py-4 ax-overflow-x-auto" *ngIf="!isLoading">
+  <ng-container *ngFor="let item of items">
+      <div
+          class="ax-flex ax-flex-col ax-items-center ax-px-8 ax-py-4 ax-w-72 ax-border ax-border-solid ax-border-light-200 ax-shadow-md ax-rounded hover:ax-shadow-md ax-cursor-pointer dark:ax-border-light-800">
+          <div>
+              <img [src]="item.avatar" class="ax-w-28 ax-h-28 ax-rounded-full" alt="avatar">
+          </div>
+          <h1 class="ax-text-2xl ax-mt-5">{{item.firstName}} {{item.lastName}}</h1>
+          <p class="ax-mt-2">{{item.subject}}</p>
+          <div class="ax-flex ax-mt-7">
+              <ax-button text="Call now" color="dark" (onClick)="call(item.phone)"></ax-button>
+              <div class="ax-mx-1"></div>
+              <ax-button cssClass="ax-ms-2" text="Send mail" color="light" (onClick)="sendEmail(item.email)">
+              </ax-button>
+          </div>
+      </div>
+      <div class="ax-m-2"></div>
+  </ng-container>
+</div>
+<div class="ax-m-2"></div>
+
+<div class="ax-flex ax-py-4 ax-overflow-x-auto" *ngIf="isLoading">
+  <ng-container *ngFor="let item of items">
+      <div
+          class="ax-flex ax-flex-col ax-items-center ax-px-8 ax-py-4 ax-w-72 ax-border ax-border-solid ax-border-light-200 ax-shadow-md ax-rounded  dark:ax-border-light-700">
+          <div>
+              <div class="ax-block ax-w-28 ax-h-28 ax-rounded-full ax-skeleton ax-skeleton-animate"></div>
+          </div>
+          <div class="ax-block ax-w-44 ax-h-8 ax-mt-5 ax-rounded ax-skeleton ax-skeleton-animate">
+          </div>
+          <div class="ax-block ax-w-36 ax-h-6 ax-mt-2 ax-rounded ax-skeleton ax-skeleton-animate"></div>
+          <div class="ax-flex ax-mt-7">
+              <div class="ax-block ax-w-20 ax-h-10 ax-mt-7 ax-rounded ax-skeleton ax-skeleton-animate"></div>
+              <div
+                  class="ax-block ax-w-24 ax-h-10 ax-mt-7 ax-rounded ax-skeleton ax-skeleton-animate ax-ms-2">
+              </div>
+          </div>
+      </div>
+      <div class="ax-m-2"></div>
+  </ng-container>
+</div>

@@ -93,6 +93,10 @@ const routes: Routes = [
     path: 'table',
     loadChildren: () => import("./preview/table/table.module").then(d => d.TableModule)
   },
+  {
+    path: 'skelton',
+    loadChildren: () => import("./preview/skelton/skelton.module").then(d => d.SkeltonModule)
+  },
   
   
 ];
