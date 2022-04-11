@@ -1,0 +1,25 @@
+<div class="ax-flex ax-items-center">
+    <ax-form-field class="ax-flex-1">
+        <ax-label>
+            Size
+        </ax-label>
+        <ax-select-box [items]="sizes"   placeholder="Choose size" valueField="value" [(value)]="selectedSize" [allowNull]="false" class="ax-w-full" (onValueChanged)="_handleValueChanged($event)">
+            <ax-suffix>
+                <ax-button text="Open Popup" color="dark" (onClick)="handleOpenPopup()">
+                </ax-button>
+            </ax-suffix>
+        </ax-select-box>
+    </ax-form-field>
+    <ng-template let-data #tpl>
+        <div class="ax-grid ax-grid-cols-6 ax-gap-4 ax-p-4">
+            <div class="ax-col-span-6">
+                <ax-form-field>
+                    <ax-label>
+                        First Name
+                    </ax-label>
+                    <ax-text-box placeholder="Your first name" [(value)]="data.firstName"></ax-text-box>
+                </ax-form-field>
+            </div>
+        </div>
+    </ng-template>
+</div>
