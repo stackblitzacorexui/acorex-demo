@@ -3,9 +3,9 @@ import { PopUpSize } from "./popup-sizes/popup-size";
 
 
 export const routes: Routes = [
-    { path: '', pathMatch: "full", redirectTo: 'popup-size' },
+    { path: '', pathMatch: "full", redirectTo: 'popup-sizes' },
     {
-        path: 'popup-size',
+        path: 'popup-sizes',
         component: PopUpSize,
     }
 ]
