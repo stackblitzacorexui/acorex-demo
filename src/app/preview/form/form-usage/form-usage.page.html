@@ -1,0 +1,74 @@
+<div class="ax-container">
+    <ax-form>
+        <div class="ax-grid ax-grid-cols-6 ax-gap-4 ax-p-4">
+            <div class="md:ax-col-span-3 ax-col-span-6">
+                <ax-form-field>
+                    <ax-label>
+                        First Name
+                    </ax-label>
+                    <ax-text-box placeholder="Your first name" [(value)]="firstname">
+                        <ax-validation-rule rule="required" message="Please enter your firstname">
+
+                        </ax-validation-rule>
+                    </ax-text-box>
+                </ax-form-field>
+            </div>
+            <div class="md:ax-col-span-3 ax-col-span-6">
+                <ax-form-field>
+                    <ax-label>
+                        Last Name
+                    </ax-label>
+                    <ax-text-box placeholder="Your last name" [(value)]="lastname">
+                        <ax-validation-rule rule="required" message="Please enter your lastname">
+                        </ax-validation-rule>
+                    </ax-text-box>
+                </ax-form-field>
+            </div>
+            <div class="md:ax-col-span-3 ax-col-span-6">
+                <ax-form-field>
+                    <ax-label>
+                        Age
+                    </ax-label>
+                    <ax-select-box [items]="['10-25','26-40','41-60','61-80','80+']">
+                        <ax-validation-rule rule="required" message="Please select your age range">
+                        </ax-validation-rule>
+                    </ax-select-box>
+                </ax-form-field>
+            </div>
+            <div class="md:ax-col-span-3 ax-col-span-6">
+                <ax-form-field>
+                    <ax-label>
+                        Mobile
+                    </ax-label>
+                    <ax-text-box placeholder="Your mobile number (optional)" [(value)]="mobile"></ax-text-box>
+                </ax-form-field>
+            </div>
+            <div class="ax-col-span-6">
+                <ax-form-field>
+                    <ax-label>
+                        Email
+                    </ax-label>
+                    <ax-text-box placeholder="Your active email" [(value)]="email">
+                        <ax-validation-rule rule="required" message="Please enter your firstname">
+                        </ax-validation-rule>
+                        <!-- TODO: Check type on build time -->
+                        <!-- <ax-validation-rule rule="email">
+                        </ax-validation-rule> -->
+                    </ax-text-box>
+                </ax-form-field>
+            </div>
+            <div class="ax-col-span-6 ax-mt-3">
+                <ax-form-field>
+                    <ax-check-box >
+                       I agree to the <a class="ax-text-primary-500 ax-underline" href="#"> Terms &
+                                Conditions
+                            </a>
+                        <ax-form-hint>You will receive our latest updates and promotions on your</ax-form-hint>
+                        <ax-validation-rule rule="required" message="Please tick above  to aggree Terms & Conditions">
+                        </ax-validation-rule>
+                    </ax-check-box>
+                </ax-form-field>
+            </div>
+        </div>
+    </ax-form>
+</div>

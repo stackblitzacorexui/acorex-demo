@@ -117,7 +117,10 @@ const routes: Routes = [
     path: 'breadcrumbs',
     loadChildren: () => import("./preview/breadcrumbs/breadcrumbs.module").then(d => d.BreadcrumbsnModule)
   },
-  
+  {
+    path: 'form',
+    loadChildren: () => import("./preview/form/form.module").then(d => d.FormModule)
+  },
 ];
 
 @NgModule({
