@@ -125,6 +125,10 @@ const routes: Routes = [
     path: 'menu',
     loadChildren: () => import("./preview/menu/menu.module").then(d => d.MenuModule)
   },
+  {
+    path: 'popup',
+    loadChildren: () => import("./preview/popup/popup.module").then(d => d.PopupModule)
+  },
 ];
 
 @NgModule({
