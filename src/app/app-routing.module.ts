@@ -129,6 +129,10 @@ const routes: Routes = [
     path: 'popup',
     loadChildren: () => import("./preview/popup/popup.module").then(d => d.PopupModule)
   },
+  {
+    path: 'collapse',
+    loadChildren: () => import("./preview/collapse/collapse.module").then(d => d.CollapseModule)
+  },
 ];
 
 @NgModule({
