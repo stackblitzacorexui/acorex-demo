@@ -4,7 +4,7 @@ import { Component, OnInit } from '@angular/core';
   selector: 'app-collapse-accordion.',
   templateUrl: './collapse-accordion.page.html',
 })
-export class NumberBoxDisabledPage implements OnInit {
+export class CollapseAccordionPage implements OnInit {
   constructor() {}
 
   ngOnInit() {}

@@ -5,6 +5,7 @@ import {  AXBadgeModule, AXButtonModule, AXCheckBoxModule, AXCollapseModule, AXD
 import { routes } from './collapse.routes';
 import { CollapseUsagePage } from './collapse-usage/collapse-usage.page';
 import { CollapseGroupPage } from './collapse-group/collapse-group.page';
+import { CollapseAccordionPage } from './collapse-accordion/collapse-accordion.page';
 
 
 
@@ -18,7 +19,8 @@ const MODULES: any = [
 
 const PAGES: any = [
  CollapseUsagePage,
- CollapseGroupPage
+ CollapseGroupPage,
+ CollapseAccordionPage
 ]
 
 
