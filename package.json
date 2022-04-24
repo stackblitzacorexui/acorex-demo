@@ -10,9 +10,9 @@
   },
   "private": true,
   "dependencies": {
-    "@acorex/components": "^5.0.57",
-    "@acorex/core": "^5.0.57",
-    "@acorex/styles": "^5.0.57",
+    "@acorex/components": "^5.0.60",
+    "@acorex/core": "^5.0.60",
+    "@acorex/styles": "^5.0.60",
     "@angular/animations": "~13.2.1",
     "@angular/cdk": "^13.1.1",
     "@angular/common": "~13.2.1",

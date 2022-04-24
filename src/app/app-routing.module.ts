@@ -133,6 +133,10 @@ const routes: Routes = [
     path: 'collapse',
     loadChildren: () => import("./preview/collapse/collapse.module").then(d => d.CollapseModule)
   },
+  {
+    path: 'result',
+    loadChildren: () => import("./preview/result/result.module").then(d => d.ResultModule)
+  },
 ];
 
 @NgModule({

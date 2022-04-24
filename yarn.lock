@@ -2,24 +2,24 @@
 # yarn lockfile v1
 
 
-"@acorex/components@^5.0.57":
-  "integrity" "sha512-8U2a1jIBSPglDckf6akXx3JJUDwLdUoL5+Hqd5NpBCISlRuzeR4LFJYXPvD/KeYfP0d7m9M1fvimxHOo8xppaw=="
-  "resolved" "https://registry.npmjs.org/@acorex/components/-/components-5.0.57.tgz"
-  "version" "5.0.57"
+"@acorex/components@^5.0.60":
+  "integrity" "sha512-Q1dXosEowFguKO993+94D5XAREJQrp1UcekfiI0CYJItBx8RBpYa1u7GSq89qhvhfEWF/IeCbSKWO2RTXIVx6g=="
+  "resolved" "https://registry.npmjs.org/@acorex/components/-/components-5.0.60.tgz"
+  "version" "5.0.60"
   dependencies:
     "tslib" "^2.3.0"
 
-"@acorex/core@^5.0.57":
-  "integrity" "sha512-VnSx+f04Xu2qNNcbIdfDMMApeFr1dFqyDv2mFQyOoAw5ZHxJZVRGoKsHRv59Q7b+G0S1WYHYbUgm49s3Pb4orw=="
-  "resolved" "https://registry.npmjs.org/@acorex/core/-/core-5.0.57.tgz"
-  "version" "5.0.57"
+"@acorex/core@^5.0.60":
+  "integrity" "sha512-UBURw/M03vGCO0U+gBOaXzxReEichDJdK7Hv43GSWBlAoDoruVUTom99Ar2n5ozcCNShwtxsqgLVkxtBkFuPrA=="
+  "resolved" "https://registry.npmjs.org/@acorex/core/-/core-5.0.60.tgz"
+  "version" "5.0.60"
   dependencies:
     "tslib" "^2.3.1"
 
-"@acorex/styles@^5.0.57":
-  "integrity" "sha512-Dl/72AOIj+8bZlrx8E/I13/AiMTH36fDi9Ut95QCstzT/MK/sknDtaGt8q8uG5GTqngSkSIikE8yVF7fL7tTJA=="
-  "resolved" "https://registry.npmjs.org/@acorex/styles/-/styles-5.0.57.tgz"
-  "version" "5.0.57"
+"@acorex/styles@^5.0.60":
+  "integrity" "sha512-nfZ5V87VvYeupoNFp0kjM0Mq0hohYef/mfnhHIOPOEuLJYbZQ4K0sPKAO2BgM+VmfTmp4v7MeIjXG8G5bLtBvw=="
+  "resolved" "https://registry.npmjs.org/@acorex/styles/-/styles-5.0.60.tgz"
+  "version" "5.0.60"
 
 "@ampproject/remapping@^2.1.0":
   "integrity" "sha512-hoyByceqwKirw7w3Z7gnIIZC3Wx3J484Y3L/cMpXFbr7d9ZQj2mODrirNzcJa+SM3UlpWXYvKV4RlRpFXlWgXg=="
