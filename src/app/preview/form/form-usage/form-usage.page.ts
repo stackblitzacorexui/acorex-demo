@@ -1,5 +1,5 @@
 import { AXBasePageComponent, AXClickEvent, AXFormComponent, AXToastService, AX_TIME_FORMAT } from '@acorex/components';
-import { ChangeDetectorRef, Component, OnInit, ViewChild } from '@angular/core';
+import { ChangeDetectorRef, Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { DemoService } from '../../demo.service';
 @Component({
   selector: 'app-form-usage',
@@ -12,8 +12,8 @@ export class FormUsagePage extends AXBasePageComponent  implements OnInit {
   email: string;
   @ViewChild(AXFormComponent)
   form: AXFormComponent;
-  constructor(private cdr: ChangeDetectorRef, private ds: DemoService) {
-    super()
+  constructor(private _elRef:ElementRef,private cdr: ChangeDetectorRef, private ds: DemoService) {
+    super(_elRef,cdr)
     }
   ngOnInit() {}
   _handleSubmitClick() {

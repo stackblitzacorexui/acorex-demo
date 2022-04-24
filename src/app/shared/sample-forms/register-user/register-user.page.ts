@@ -11,7 +11,7 @@ export class RegisterUserPage extends AXBasePageComponent implements OnInit {
     form: AXFormComponent;
 
     constructor(private ref: ElementRef, private cdr: ChangeDetectorRef, private _popupService: AXPopupService) {
-        super()
+        super(ref,cdr)
     }
     ngOnInit(): void { }
 

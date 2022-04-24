@@ -1,10 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-number-box-readonly',
-  templateUrl: './number-box-readonly.page.html',
+  selector: 'app-collapse-accordion-non-collapsedIndex',
+  templateUrl: './collapse-accordion-non-collapsedIndex.page.html',
 })
-export class NumberBoxReadonlyPage implements OnInit {
+export class collapseAccordionNonCollapsedIndexPage implements OnInit {
   constructor() {}
 
   ngOnInit() {}

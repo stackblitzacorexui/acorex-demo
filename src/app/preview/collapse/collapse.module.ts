@@ -6,6 +6,8 @@ import { routes } from './collapse.routes';
 import { CollapseUsagePage } from './collapse-usage/collapse-usage.page';
 import { CollapseGroupPage } from './collapse-group/collapse-group.page';
 import { CollapseAccordionPage } from './collapse-accordion/collapse-accordion.page';
+import { collapseAccordionNonCollapsedIndexPage } from './collapse-accordion-non-collapsedIndex/collapse-accordion-non-collapsedIndex.page';
+import { CollapseHeaderePage } from './collapse-header/collapse-header.page';
 
 
 
@@ -20,7 +22,9 @@ const MODULES: any = [
 const PAGES: any = [
  CollapseUsagePage,
  CollapseGroupPage,
- CollapseAccordionPage
+ CollapseAccordionPage,
+ collapseAccordionNonCollapsedIndexPage,
+ CollapseHeaderePage
 ]
 
 
